@@ -1,0 +1,6 @@
+*.json
+*.html
+*.svg
+*.css
+*rc.js
+.husky

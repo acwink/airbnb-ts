@@ -1,0 +1,10 @@
+build
+dist
+out
+.husky
+# 如果你不希望 prettier 检查代码文件的话
+# *.ts
+# *.tsx
+# *.jsx
+# *.js
+*.svg
