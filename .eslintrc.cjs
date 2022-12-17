@@ -4,7 +4,6 @@ module.exports = {
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
     "prettier",
-    "ts-ruleset",
   ],
   parser: "@typescript-eslint/parser",
   plugins: ["react", "@typescript-eslint"],
@@ -16,6 +15,12 @@ module.exports = {
     "@typescript-eslint/quotes": ["error", "double"],
     semi: "off",
     "@typescript-eslint/semi": ["error"],
+    "ts-styled-plugin": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
+    "react/display-name": "off",
+    "react/prop-types": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
   },
   settings: {
     react: {
