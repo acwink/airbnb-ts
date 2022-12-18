@@ -3,3 +3,7 @@ type Without<T, U> = {
 };
 
 export type XOR<T, U> = (Without<T, U> & U) | (Without<U, T> & T);
+
+export type Nullable<T> = {
+  [P in keyof T]: T[P] | null;
+};
