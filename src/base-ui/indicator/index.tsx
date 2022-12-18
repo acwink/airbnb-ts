@@ -2,7 +2,7 @@ import React, { memo, ReactNode, useEffect, useRef } from "react";
 import { IndicatorWrapper } from "./style";
 
 export interface IndicatorProps {
-  selectIndex: number;
+  selectIndex?: number;
   children: ReactNode;
 }
 

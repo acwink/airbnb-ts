@@ -3,6 +3,7 @@ export type PlainObjectType = Record<PropertyKey, unknown>;
 export interface IRoom {
   id: string;
   picture_url: string;
+  picture_urls: string[];
   verify_info: {
     kicker_badge?: {
       label: string;

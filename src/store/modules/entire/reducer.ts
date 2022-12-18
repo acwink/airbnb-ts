@@ -3,7 +3,7 @@ import { AnyAction } from "redux";
 
 import { ActionTypes } from "./constants";
 
-interface IEntireState {
+export interface IEntireState {
   currentPage: number;
   roomList: Array<IRoom>;
   totalCount: number;

@@ -15,7 +15,7 @@ import { Nullable } from "@/types/tool";
 
 export const fetchHomeDataAction = createAsyncThunk(
   "fetchData",
-  (payload, { dispatch }) => {
+  (_, { dispatch }) => {
     getHomeGoodPriceData().then((res) => {
       dispatch(changeGoodPriceInfoAction(res.data));
     });
@@ -42,7 +42,7 @@ export const fetchHomeDataAction = createAsyncThunk(
   }
 );
 
-interface IHomeState {
+export interface IHomeState {
   goodPriceInfo: IRes<IRoom>;
   highScoreInfo: IRes<IRoom>;
   discountInfo: IResForDest<IDestAddress, IRoom>;

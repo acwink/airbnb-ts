@@ -1,10 +1,16 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+export interface IDetailState {
+  detailInfo: any;
+}
+
+const initialState: IDetailState = {
+  detailInfo: {},
+};
+
 const detailSlice = createSlice({
   name: "detail",
-  initialState: {
-    detailInfo: {},
-  },
+  initialState,
   reducers: {
     changeDetailInfoAction(state, { payload }) {
       state.detailInfo = payload;
